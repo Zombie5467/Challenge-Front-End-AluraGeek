@@ -1,0 +1,194 @@
+.container__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  background-color: $white-clr;
+
+  padding: 30px;  
+
+}
+
+.container__logo {
+	display: flex;
+  align-items: center;
+  gap: 10px;
+
+	& span {
+		background: linear-gradient(to left, #00bcd4 0%, #651FFF 100%);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	  -moz-text-fill-color: transparent;
+	}
+
+  & h1 {
+    color: $gray-clr;
+  }
+
+ 
+}
+
+.container--search {
+	width: 28em;
+	height: 2.2em;
+
+  
+
+	border-radius: 20px;
+	// border: 1px solid salmon;
+
+  margin-left: 20px;
+	
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+  background-color: $body-bg;
+
+  transition: all 0.3s ease-in-out;
+
+	& a {
+		background: transparent;
+		border: 0;
+	}
+
+  // &:hover {
+  //   background-color: #0071E3;
+  // }
+}
+
+input {
+	width: 30em;
+	height: 2.2em;
+  
+ 	font-weight: bold;
+  
+  color: $gray-clr;
+
+	margin: 0 10 0 0;
+	padding: 4px 12px;
+
+	border-radius: 20px;
+	border-style: none;
+	outline: none;
+  // border: 1px salmon solid;
+	background: transparent;
+
+  input:hover {
+    background-color: #0071E3;
+  }
+}
+
+.boton {
+  font-weight: bold;
+  color: aliceblue;
+
+  background-color: #0071E3;
+
+  border-radius: 50px;
+  border: 0;
+  
+  padding: 12px;
+  
+   transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $h-claro;
+  }
+
+  &:active {
+    opacity: .9;
+  }
+}
+
+
+
+@media (max-width: 822px) {
+  .container__header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container__logo {
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+  }
+  .container--search {
+    width: 40px;
+    
+    justify-content: center;
+    margin: 0;
+    
+    & input {
+      display: none;
+    }
+
+    &:hover{
+      width: 28em;
+     
+
+      input {
+        width: 28em;
+        display: inline-block;
+      }
+
+    }
+
+    &:active{
+      width: 28em;
+     
+
+      input {
+        width: 28em;
+        display: inline-block;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 482px) {
+  .container__logo {
+    h1 {
+    font-size: 18px;
+  }
+  }
+
+  .container--search {
+    
+    &:hover{
+      width: 14em;
+    
+
+      input {
+        width: 14em;
+       
+      }
+
+      a {
+        display: none;
+      }
+
+    }
+    
+    &:active{
+      width: 14em;
+    
+
+      input {
+        width: 14em;
+      
+      }
+
+      a {
+        display: none;
+      }
+    }
+
+    
+  }
+}

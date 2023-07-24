@@ -1,0 +1,29 @@
+
+//abstracts
+// @import"abstracts/mixin";
+// @import"abstracts/placeholders";
+@import"abstracts/variables";
+
+//base
+@import"base/reset";
+@import"base/typography";
+
+//components
+// @import"components/form";
+
+//layout
+// @import"layout/experiencias";
+// @import"layout/footer";
+// @import"layout/formacion";
+// @import"layout/navbar";
+@import"layout/header";
+// @import"layout/presentacion";
+// @import"layout/skills";
+// @import"layout/sobreMi";
+
+//themes
+@import"themes/light";
+
+//Vendors
+// @import"vendors/googleFont";
+

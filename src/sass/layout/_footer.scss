@@ -1,0 +1,12 @@
+.rodapie {
+    // @extend %border;
+    background-color: $body-bg;
+    color: $gray-clr;
+
+    padding: 60px;
+
+    text-align: center;
+}
+p {
+    margin: 8px;
+}

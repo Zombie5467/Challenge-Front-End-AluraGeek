@@ -1,0 +1,12 @@
+# Carpeta donde Parcel generará los archivos optimizados
+dist/
+
+# Dependencias de Node.js (serán instaladas por npm o yarn)
+node_modules/
+
+# Archivos temporales y caches
+.cache/
+.parcel-cache/
+
+# Archivos de configuración locales
+.vscode/

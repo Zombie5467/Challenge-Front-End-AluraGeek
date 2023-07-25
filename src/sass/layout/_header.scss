@@ -1,18 +1,19 @@
+// Container del Header
 .container__header {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-
+  @include flex($j-content:space-around, $a-items:null, $wrap:wrap, $gap:null);
+  
   background-color: $white-clr;
-
-  padding: 30px;  
-
+  
+  width: 100%;
+  
+  padding: 1.875em;  
 }
 
+// --------------------------------------------------------------------------------------------
+
+// Container del Logo y el Nombre de la Tienda
 .container__logo {
-	display: flex;
-  align-items: center;
-  gap: 10px;
+  @include flex($j-content:null, $a-items:center, $wrap:wrap, $gap:0.625em);
 
 	& span {
 		background: linear-gradient(to left, #00bcd4 0%, #651FFF 100%);
@@ -25,24 +26,20 @@
   & h1 {
     color: $gray-clr;
   }
-
- 
 }
 
+// --------------------------------------------------------------------------------------------
+
+// Barra de Búsqueda
 .container--search {
+  @include flex($j-content:null, $wrap:wrap, $gap:null);
+
 	width: 28em;
 	height: 2.2em;
 
-  
+	border-radius: 1.25em;
 
-	border-radius: 20px;
-	// border: 1px solid salmon;
-
-  margin-left: 20px;
-	
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
+  margin-left: 1.25em;
 
   background-color: $body-bg;
 
@@ -52,10 +49,6 @@
 		background: transparent;
 		border: 0;
 	}
-
-  // &:hover {
-  //   background-color: #0071E3;
-  // }
 }
 
 input {
@@ -67,31 +60,29 @@ input {
   color: $gray-clr;
 
 	margin: 0 10 0 0;
-	padding: 4px 12px;
+	padding: .25em .9em;
 
 	border-radius: 20px;
 	border-style: none;
 	outline: none;
-  // border: 1px salmon solid;
+  
 	background: transparent;
-
-  input:hover {
-    background-color: #0071E3;
-  }
 }
+
+// Boton
 
 .boton {
   font-weight: bold;
-  color: aliceblue;
+  color: $white-clr;
 
-  background-color: #0071E3;
+  background-color: $blue;
 
   border-radius: 50px;
   border: 0;
   
-  padding: 12px;
+  padding: .9em;
   
-   transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
   cursor: pointer;
 
   &:hover {
@@ -103,8 +94,13 @@ input {
   }
 }
 
+// --------------------------------------------------------------------------------------------
 
 
+
+// Responsive
+
+// Container del Header
 @media (max-width: 822px) {
   .container__header {
     flex-direction: column;
@@ -112,14 +108,17 @@ input {
     align-items: center;
   }
 
+  // Container del Logo y el Nombre de la Tienda
   .container__logo {
     flex-direction: column;
     margin-bottom: 20px;
     
   }
+
+  // Barra de Búsqueda
   .container--search {
-    width: 40px;
-    
+    width: 2.5em;
+
     justify-content: center;
     margin: 0;
     
@@ -141,7 +140,6 @@ input {
     &:active{
       width: 28em;
      
-
       input {
         width: 28em;
         display: inline-block;
@@ -152,21 +150,22 @@ input {
 }
 
 @media (max-width: 482px) {
+  // Container del Logo y el Nombre de la Tienda
   .container__logo {
+    // Nombre de la Tienda
     h1 {
-    font-size: 18px;
-  }
+      font-size: 1.125rem;
+    }
   }
 
+  // Barra de Búsqueda
   .container--search {
     
     &:hover{
       width: 14em;
     
-
       input {
         width: 14em;
-       
       }
 
       a {
@@ -178,10 +177,8 @@ input {
     &:active{
       width: 14em;
     
-
       input {
         width: 14em;
-      
       }
 
       a {
@@ -189,6 +186,5 @@ input {
       }
     }
 
-    
   }
 }

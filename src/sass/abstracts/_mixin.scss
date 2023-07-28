@@ -1,3 +1,4 @@
+// Mixin FlexBox
 @mixin flex($display:flex, $j-content:center, $a-items:center, $wrap:wrap, $gap:1.5625em) {
 
     display: $display;
@@ -14,6 +15,9 @@
     $a-items = align-items
 */
 
+// ----------------------------------------------------------------------------------
+
+// Mixin Container
 @mixin contain() {
 
     background: #8E2DE2;  /* fallback for old browsers */
@@ -33,4 +37,70 @@
         height: auto;
         padding: 1.25em;
     }
+}
+
+// ----------------------------------------------------------------------------------
+
+// Mixin span (degradado del nombre Alura Geek)
+@mixin span() {
+  background: linear-gradient(to left, #00bcd4 0%, #651FFF 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+}
+
+// ----------------------------------------------------------------------------------
+
+// Boton Azul
+@mixin btn__azul {
+
+  font-weight: $w-bold;
+  color: $white-clr;
+
+  background-color: $blue;
+
+  border-radius: 50px;
+  border: 0;
+  
+  padding: .9em;
+  
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $h-claro;
+  }
+
+  &:active {
+    opacity: .9;
+  }
+}
+
+// ----------------------------------------------------------------------------------
+
+// Boton Transparente
+@mixin btn__transparente {
+
+  font-size: 1.40rem;
+  font-weight: $w-bold;
+  color: $white-clr;
+
+  background-color: transparent;
+
+  padding: 1.3em 2em;
+  
+  border: 3px solid $white-clr;
+  
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    color: $gray-clr;
+    background-color: $white-clr;
+  }
+
+  &:active {
+    opacity: .9;
+  }
 }

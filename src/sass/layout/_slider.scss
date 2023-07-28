@@ -1,0 +1,350 @@
+// Container general de la sección del Slider
+.img__slider {
+  width: $xl;
+  height: $md-vw;
+  
+  position: relative;
+  
+  overflow: hidden;
+}
+
+// --------------------------------------------------------------------------------------------
+
+// Container de la imagen, la info y el boton
+// clip-pat Para la TRANSICIÓN DEL SLIDE 
+// sin la propiedad "transition" porque Si quería la transición del clip-pat pero NO su efecto 
+.img__slider .slide{
+  width: $xl;  
+  
+  position: absolute;
+
+  z-index: 1;
+  clip-path: circle(0% at 0 50%);
+}
+
+// --------------------------------------------------------------------------------------------
+
+// Container de la imagen, la info y el boton (activo)
+// clip-pat Para la TRANSICIÓN DEL SLIDE  
+.img__slider .slide.active {
+  clip-path: circle(150% at 0 50%);
+}
+
+// --------------------------------------------------------------------------------------------
+
+// Container de la imagen
+.img__slider .slide img {
+  width: $xl;
+  height: $md-vw;
+  
+  z-index: 1;
+  object-fit: cover;
+}
+
+// --------------------------------------------------------------------------------------------
+
+// Container de la info
+.img__slider .slide .slide__info {
+  padding: 0.9375em 1.875em;
+  
+  position: absolute;
+  top: 15;
+}
+
+// h2
+.img__slider .slide .slide__info h2 {
+  color: $white-clr;
+  
+  font-size: 2.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  margin-bottom: 0.9375em;
+}
+
+// p
+.img__slider .slide .slide__info p {
+  width: $sm;
+  
+  color: $white-clr;
+  font-size: 1.875rem;
+  
+  background: $p-slide;
+  
+  padding: 0.625em;
+  margin-bottom: 4.0625em;
+  
+  border-radius: 4px;
+}
+
+// Boton
+.boton--transparente {
+  @include btn__transparente();
+}
+
+// --------------------------------------------------------------------------------------------
+
+// Container de la Navegacion Manual
+.img__slider .navegacion {
+  display: flex;
+
+  position: absolute;
+  bottom: 1.875em;
+  left: 50%;
+  
+  z-index: 2;
+  transform: translateX(-50%);
+}
+
+.img__slider .navegacion .btn {
+  width: 12px;
+  height: 12px;
+  
+  margin: 10px;
+  
+  background: rgba(255, 255, 255, 0.5);
+  
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.img__slider .navegacion .btn.active {
+  background: $white-clr;
+}
+
+// --------------------------------------------------------------------------------------------
+
+// Responsive
+@media (max-width: 820px) {
+
+  .img__slider .slide .slide__info {
+    padding: 0.625em 1.5625em;
+  }
+
+  .img__slider .slide .slide__info h2 {
+    font-size: 2.25rem;
+  }
+  
+  .img__slider .slide .slide__info p {
+    width: $md-70;
+    font-size: 1.375rem;
+  }
+
+  .img__slider .navegacion {
+    bottom: 1.5625em;
+  }
+
+  .img__slider .navegacion .btn {
+    width: 10px;
+    height: 10px;
+
+    margin: 0.5em;
+ }
+
+ .boton--transparente {
+    padding: 1em 1.3em;
+  }
+}
+
+// --------------------------------------------------------------------------------------------
+
+@media (max-width: 620px) {
+
+  .img__slider .slide .slide__info {
+    padding: 0.625em 1.25em;
+  }
+  
+  .img__slider .slide .slide__info p {
+    width: $md;
+    font-size: 1.125rem;
+  }
+
+  .img__slider .navegacion {
+    bottom: 0.9375em;
+  }
+
+  .img__slider .navegacion .btn {
+    width: 8px;
+    height: 8px;
+
+    margin: 6px;
+ }
+}
+
+// --------------------------------------------------------------------------------------------
+
+@media (max-width: 420px) {
+
+  .img__slider .slide img {
+  height: $sm-vw;
+
+}
+  .img__slider .slide .slide__info {
+    padding: 0.3125em 0.625em;
+  }
+  
+  .img__slider .slide .slide__info p {
+    width: $xl-90;
+    font-size: .8125rem;
+  }
+
+  .boton--transparente {
+    font-size: .8125rem;
+  }
+
+  .img__slider .navegacion {
+    bottom: 11.25em;
+  }
+}
+
+
+
+// segundo
+/*
+.container__slider {
+  // padding: 2rem;
+}
+
+.wrapper__slider {
+  position: relative;
+  // max-width: 48rem;
+  // margin: 0 auto;
+//  animation: slide 20s infinite cubic-bezier(0.55, 0.48, 0.37, 0.92);
+}
+
+.slider {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  // scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+   
+  
+
+  & img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    opacity: 1; 
+    transition: opacity 250ms ease;
+   
+  }
+} 
+
+.slider--nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+
+ 
+  & a {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: aliceblue;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+@keyframes slide {
+  0% {margin-left: 0;}
+  10% {margin-left: 0;}
+
+  15% {margin-left: -100%;}
+  40% {margin-left: -100%;}
+
+  45% {margin-left: -200%;}
+  60% {margin-left: -200%;}
+
+  65% {margin-left: -300%;}
+  80% {margin-left: -300%;}
+
+  85% {margin-left: -400%;}
+  100% {margin-left: -400%;}
+}
+*/
+
+// primero
+/*
+
+.slider {
+  border: 1px solid salmon;
+  height: 60vh;
+  
+}
+
+.sliders {
+  width: 100%;
+  height: 80vh;                         // <-- 60 para el responsive
+  display: flex;
+  // justify-content: start;
+  align-items: center;                 // <-- Quitar para el responsive
+  overflow: hidden;
+  border: 1px solid skyblue;
+  // transition: all 0.15s ease;
+  
+  & input {
+    display: none;
+    // border: 1px solid rgb(170, 18, 18);
+  }
+
+  & img {
+    width: 100%;
+    height: auto;
+    // object-fit: cover;
+    border: 1px solid purple;
+    transition: all 1s ease;
+  }
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+
+  & label {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    border: 2px solid aliceblue;
+    margin: 8px;
+    cursor: pointer;
+    transition: all .8s ease;
+
+    &:hover {
+      background-color: aliceblue;
+    }
+
+    &:active {
+      background-color: aliceblue;
+    }
+  }
+}
+
+#img1:checked ~ .mg1 {
+  margin-left: 0;
+}
+
+#img2:checked ~ .mg2 {
+  margin-left: -100%;
+}
+
+#img3:checked ~ .mg3 {
+  margin-left: -200%;
+}
+
+#img4:checked ~ .mg4 {
+  margin-left: -300%;
+}
+*/

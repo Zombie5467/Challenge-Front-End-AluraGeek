@@ -4,7 +4,7 @@
   
   background-color: $white-clr;
   
-  width: 100%;
+  width: $xl;
   
   padding: 1.875em;  
 }
@@ -16,12 +16,8 @@
   @include flex($j-content:null, $a-items:center, $wrap:wrap, $gap:0.625em);
 
 	& span {
-		background: linear-gradient(to left, #00bcd4 0%, #651FFF 100%);
-		-webkit-background-clip: text;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
-	  -moz-text-fill-color: transparent;
-	}
+		@include span();
+  }
 
   & h1 {
     color: $gray-clr;
@@ -55,7 +51,7 @@ input {
 	width: 30em;
 	height: 2.2em;
   
- 	font-weight: bold;
+ 	font-weight: $w-bold;
   
   color: $gray-clr;
 
@@ -70,33 +66,12 @@ input {
 }
 
 // Boton
-
 .boton {
-  font-weight: bold;
-  color: $white-clr;
-
-  background-color: $blue;
-
-  border-radius: 50px;
-  border: 0;
+  @include btn__azul();
   
-  padding: .9em;
-  
-  transition: background-color 0.3s ease-in-out;
-  cursor: pointer;
-
-  &:hover {
-    background-color: $h-claro;
-  }
-
-  &:active {
-    opacity: .9;
-  }
 }
 
 // --------------------------------------------------------------------------------------------
-
-
 
 // Responsive
 

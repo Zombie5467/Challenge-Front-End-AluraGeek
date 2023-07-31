@@ -1,7 +1,7 @@
 
 //abstracts
 @import"abstracts/mixin";
-// @import"abstracts/placeholders";
+@import"abstracts/placeholders";
 @import"abstracts/variables";
 
 //base
@@ -9,17 +9,18 @@
 @import"base/typography";
 
 //components
-// @import"components/form";
+@import"components/form";
 
 //layout
 // @import"layout/experiencias";
-// @import"layout/footer";
+@import"layout/footer";
 // @import"layout/formacion";
 // @import"layout/navbar";
 // @import"layout/presentacion";
 // @import"layout/skills";
 // @import"layout/sobreMi";
 @import"layout/card";
+@import"layout/contacto";
 @import"layout/header";
 @import"layout/slider";
 

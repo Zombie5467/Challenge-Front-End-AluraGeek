@@ -13,11 +13,11 @@
 }
 
 %glass {
-    background-color: $body-bg;
-    box-shadow: $shadow;
+    background-color: $gray-claro;
+    // box-shadow: $shadow;
 
-    border: 2px solid $gray-clr;
-    border-radius: 10px;
+    // border: 2px solid $gray-clr;
+    // border-radius: 10px;
 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);

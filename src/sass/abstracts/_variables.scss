@@ -37,9 +37,16 @@ $p-slide: rgba(0, 0, 0, 0.240);
 $white-clr: rgb(255, 255, 255);
 
 $gray-clr: rgb(110, 110, 115);
+// $gray-claro:rgba(232, 233, 236, 0.847);
+$gray-claro:#e9eaeed8;
+
+$salmon: salmon;
+
+$black: black;
 
 // Box Shadow
-$shadow: 0px 0px 20px rgba(159, 157, 160, 0.3);
+$shadow: 0px 0px 20px rgba(172, 172, 172, 0.3);
+$shadow-hover: 0px 0px 20px rgba(113, 113, 113, 0.3);
 
 // Success
 $success-clr: rgb(9, 195, 114);

@@ -47,7 +47,8 @@
 	}
 }
 
-input {
+
+.searchBar {
 	width: 30em;
 	height: 2.2em;
   
@@ -68,7 +69,6 @@ input {
 // Boton
 .boton {
   @include btn__azul();
-  
 }
 
 // --------------------------------------------------------------------------------------------
@@ -139,7 +139,7 @@ input {
     &:hover{
       width: 14em;
     
-      input {
+      .input {
         width: 14em;
       }
 
@@ -152,7 +152,7 @@ input {
     &:active{
       width: 14em;
     
-      input {
+      .input {
         width: 14em;
       }
 

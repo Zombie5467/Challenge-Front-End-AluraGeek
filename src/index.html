@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
+
   <head>
+
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,16 +22,24 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/img/Logo.png" />
 
+    <!-- jQuery lightSlide -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" integrity="sha512-+1GzNJIJQ0SwHimHEEDQ0jbyQuglxEdmQmKsu8KI7QkMPAnyDrL9TAnVyLPEttcTxlnLVzaQgxv2FpLCLtli0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Hoja de estilos Este Documento -->
     <link rel="stylesheet" href="sass/main.scss" />
 
     <title>Alura Geek</title>
+
   </head>
 
   <body>
+
     <!-- Header -->
     <header class="container__header">
+
       <div class="container__logo">
+
+        <!-- Logo -->
         <img
           src="assets/img/Logo.png"
           alt="Logo Alura Geek"
@@ -38,20 +48,23 @@
         />
         <h1><span>Alura</span> Geek</h1>
 
+        <!-- Barra de búsqueda   -->
         <div class="container--search">
           <input
             title="Barra de búsqueda"
             type="text"
-            class="searchBar"
-            placeholder="¿Que deseas Buscar?  "
+            class="searchBar input"
+            placeholder="¿Que deseas Buscar?"
           />
           <a href="#"><span class="material-symbols-outlined">search</span></a>
         </div>
       </div>
 
+      <!-- Boton Login -->
       <div>
         <button class="boton">Login</button>
       </div>
+
     </header>
 
     <!-- Slider Principal -->
@@ -62,7 +75,7 @@
         <div class="slide__info">
           <h2>Meta Quest 2</h2>
           <p>
-            Obtenga $ 80 de descuento al instante: pague $ 219.00 $ 299.00 al
+            Obtenga $ 80 de descuento al instante: pague $ 219.00 al
             momento de la aprobación de la tarjeta de Alura Geek Store. Sin
             cuota anual.
           </p>
@@ -107,7 +120,7 @@
         <img src="assets/img/pc.jpg" alt="Imagen de PC Gamer" />
 
         <div class="slide__info">
-          <h2>LA CONFIGURACIÓN DE SUS SUEÑOS COMIENZA AQUÍ</h2>
+          <h2>pc master race</h2>
           <p>
             Cree la configuración de juegos de PC definitiva con equipos creados
             para cualquier tipo de jugador que necesite ser.
@@ -143,46 +156,66 @@
     <!-- Slider de Productos, Primera Fila -->
     <section class="container__productos">
 
-      <!-- jQuery lightSlide -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" integrity="sha512-+1GzNJIJQ0SwHimHEEDQ0jbyQuglxEdmQmKsu8KI7QkMPAnyDrL9TAnVyLPEttcTxlnLVzaQgxv2FpLCLtli0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-      <h2>Las Mejores <span>Consolas</span></h2>
+      <h2>Consolas. <span>Las Mejores y al mejor precio las tienes aqui</span></h2>
 
       <ul id="autoWidth" class="cs-hidden">
 
         <li class="item-a">
 
-          <div class="card">
+          <a href="#">
+            <div class="card">
 
-            <img src="assets/img/Consolas/switch2.jpg" alt="" width="290px" height="auto">
+              <img src="assets/img/Consolas/switch2.jpg" alt="" width="290px" height="auto">
 
-            <div class="card__info">
-              <p>New</p>
-              <h4>Nintendo Switch - OLED Model</h4>
+              <div class="card__info">
+                <p>New</p>
+                <h4>Nintendo Switch - OLED Model</h4>
+              </div>
+
+              <p>$240.00</p>
+
             </div>
-
-            <p>$240.00</p>
-
-          </div>
+          </a>
 
         </li>
 
         <!-- ---------------------------------------------------------------------------------- -->
         
         <li class="item-a">
+          <a href="#">
+            <div class="card">
 
-          <div class="card">
+              <img src="assets/img/Consolas/switch2.jpg" alt="" width="290px" height="auto">
 
-            <img src="assets/img/Consolas/switch2.jpg" alt="" width="290px" height="auto">
+              <div class="card__info">
+                <p>New</p>
+                <h4>Nintendo Switch - OLED Model</h4>
+              </div>
 
-            <div class="card__info">
-              <p>New</p>
-              <h4>Nintendo Switch - OLED Model</h4>
+              <p>$240.00</p>
+
             </div>
+          </a>
+        </li>
 
-            <p>$240.00</p>
+        <!-- ---------------------------------------------------------------------------------- -->
 
-          </div>
+        <li class="item-a">
+
+          <a href="#">
+            <div class="card">
+
+              <img src="assets/img/Consolas/switch2.jpg" alt="" width="290px" height="auto">
+
+              <div class="card__info">
+                <p>New</p>
+                <h4>Nintendo Switch - OLED Model</h4>
+              </div>
+
+              <p>$240.00</p>
+
+            </div>
+          </a>
 
         </li>
 
@@ -190,18 +223,20 @@
 
         <li class="item-a">
 
-          <div class="card">
+          <a href="#">
+            <div class="card">
 
-            <img src="assets/img/Consolas/switch2.jpg" alt="" width="290px" height="auto">
+              <img src="assets/img/Consolas/switch2.jpg" alt="" width="290px" height="auto">
 
-            <div class="card__info">
-              <p>New</p>
-              <h4>Nintendo Switch - OLED Model</h4>
+              <div class="card__info">
+                <p>New</p>
+                <h4>Nintendo Switch - OLED Model</h4>
+              </div>
+
+              <p>$240.00</p>
+
             </div>
-
-            <p>$240.00</p>
-
-          </div>
+          </a>
 
         </li>
 
@@ -209,76 +244,40 @@
 
         <li class="item-a">
 
-          <div class="card">
+          <a href="#">
+            <div class="card">
 
-            <img src="assets/img/Consolas/switch2.jpg" alt="" width="290px" height="auto">
+              <img src="assets/img/Consolas/switch2.jpg" alt="" width="290px" height="auto">
 
-            <div class="card__info">
-              <p>New</p>
-              <h4>Nintendo Switch - OLED Model</h4>
+              <div class="card__info">
+                <p>New</p>
+                <h4>Nintendo Switch - OLED Model</h4>
+              </div>
+
+              <p>$240.00</p>
+
             </div>
-
-            <p>$240.00</p>
-
-          </div>
-
-        </li>
-
-        <!-- ---------------------------------------------------------------------------------- -->
-
-        <li class="item-a">
-
-          <div class="card">
-
-            <img src="assets/img/Consolas/switch2.jpg" alt="" width="290px" height="auto">
-
-            <div class="card__info">
-              <p>New</p>
-              <h4>Nintendo Switch - OLED Model</h4>
-            </div>
-
-            <p>$240.00</p>
-
-          </div>
-
+          </a>
         </li>
 
         <!-- ---------------------------------------------------------------------------------- --> 
 
         <li class="item-a">
 
-          <div class="card">
+          <a href="#">
+            <div class="card">
 
-            <img src="assets/img/Consolas/switch2.jpg" alt="" width="290px" height="auto">
+              <img src="assets/img/Consolas/switch2.jpg" alt="" width="290px" height="auto">
 
-            <div class="card__info">
-              <p>New</p>
-              <h4>Nintendo Switch - OLED Model</h4>
+              <div class="card__info">
+                <p>New</p>
+                <h4>Nintendo Switch - OLED Model</h4>
+              </div>
+
+              <p>$240.00</p>
+
             </div>
-
-            <p>$240.00</p>
-
-          </div>
-
-        </li>
-
-        <!-- ---------------------------------------------------------------------------------- --> 
-
-        
-        <li class="item-a">
-
-          <div class="card">
-
-            <img src="assets/img/Consolas/switch2.jpg" alt="" width="290px" height="auto">
-
-            <div class="card__info">
-              <p>New</p>
-              <h4>Nintendo Switch - OLED Model</h4>
-            </div>
-
-            <p>$240.00</p>
-
-          </div>
+          </a>
 
         </li>
 
@@ -287,18 +286,42 @@
         
         <li class="item-a">
 
-          <div class="card">
+          <a href="#">
+            <div class="card">
 
-            <img src="assets/img/Consolas/switch2.jpg" alt="" width="290px" height="auto">
+              <img src="assets/img/Consolas/switch2.jpg" alt="" width="290px" height="auto">
 
-            <div class="card__info">
-              <p>New</p>
-              <h4>Nintendo Switch - OLED Model</h4>
+              <div class="card__info">
+                <p>New</p>
+                <h4>Nintendo Switch - OLED Model</h4>
+              </div>
+
+              <p>$240.00</p>
+
             </div>
+          </a>
 
-            <p>$240.00</p>
+        </li>
 
-          </div>
+        <!-- ---------------------------------------------------------------------------------- --> 
+
+        
+        <li class="item-a">
+
+          <a href="#">
+            <div class="card">
+
+              <img src="assets/img/Consolas/switch2.jpg" alt="" width="290px" height="auto">
+
+              <div class="card__info">
+                <p>New</p>
+                <h4>Nintendo Switch - OLED Model</h4>
+              </div>
+
+              <p>$240.00</p>
+
+            </div>
+          </a>
 
         </li>
 
@@ -309,7 +332,90 @@
 
     </section>
 
-    <!--JavaScript ---------------------------------------------------------------------------------- -->
+    <!-- Sección Contacto y Servicios -->
+    <section class="container__contacto">
+
+      <div class="servicios">
+        <a href="#">Quienes Somos</a><br>
+        <a href="#">Política de Privacidad</a><br>
+        <a href="#">Programa de fidelidad</a><br>
+        <a href="#">Nuestras Tiendas</a><br>
+        <a href="#">Quiero ser Franquiciado</a><br>
+        <a href="#">Enunciate aquí</a><br>
+      </div>
+
+      <!-- Formulario de Contacto Principal -->
+        <div class="background">
+
+          <form id="form" action="/" method="POST">
+
+            <h1>Contact Form</h1>
+
+            <div class="input__control">
+              <label for="nombre">Nombre</label>
+              <input name="nombre" type="text" id="nombre" placeholder="Tu Nombre" class="input__form">
+              <div class="error"></div>
+            </div><br>
+
+            <div class="input__control">
+              <label for="email">Correo Electrónico</label>
+              <input name="correo" type="text" id="email" placeholder="tuemail@email.com" class="input__form">
+              <div class="error"></div>
+            </div><br>
+
+            <div class="input__control">
+              <label for="message">Mensaje</label>
+              <textarea name="textarea" id="cuadro" placeholder="Escribe tu mensaje aquí" cols="30" rows="10"></textarea>
+              <div class="error"></div>
+            </div>
+
+            <button class="boton" type="submit" value="enviar">Enviar</button> 
+            <!-- onclick="sendEmail()"-->
+
+          </form>
+
+        </div>
+
+      
+
+    </section>
+
+    <footer id="rodapie" class="rodapie">
+      <p>Desarrollado por Addel de los Santos Vasquez</p>
+        <p>809 924 7276 <i class="fa-brands fa-whatsapp"></i><i class="fa-brands fa-telegram"></i></p>
+        <p>2023</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript Slider de Productos ---------------------------------------------------------------------------------- -->
+
     <!-- CDN Uncompressed -->
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 
@@ -318,10 +424,15 @@
 
     <script src="js/card.js"></script>
 
-    <!-- ---------------------------------------------------------------------------------- -->
-
+    <!-- JavaScript Slider Principal ---------------------------------------------------------------------------------- -->
+    
     <script src="js/silder.js"></script>
+
+    <!-- JavaScript Formulario de Contacto Principal ---------------------------------------------------------------------------------- -->
+    <script src="js/contact.js"></script>
+
   </body>
+
 </html>
 
 <!-- <a href="#"></a> -->

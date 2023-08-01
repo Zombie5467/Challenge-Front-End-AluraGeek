@@ -1,45 +1,6 @@
-.container__contacto {
-  width: 100%;
-  border: 1px solid salmon;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  // flex-wrap: wrap;
-  padding: 50px;
-  
-
-  // @include flex($j-content: center);
-  // margin-bottom: 2.8125em;
+// Links "a"
+.a__servicios {
+  @include a__gray();
 }
 
-.servicios {
-  // display: block;
-  // display: flex;
-  // flex-direction: column;
-  // gap: 1.5625rem;  
-
-  a {
-    // text-decoration: none;
-    margin-bottom: 30px;
-    display: inline-block;
-    color: $gray-clr;
-
-    &:hover {
-    border-bottom: 1px solid $gray-clr;
-    }
-  }
-}
-
-@media (max-width: 820px) {
-  .container__contacto {
-    flex-direction: column;
-  }
-
-  // .servicios {
-  //   a {
-  //     margin-bottom: -25px;
-  //   }
-  // }
-
-}
 

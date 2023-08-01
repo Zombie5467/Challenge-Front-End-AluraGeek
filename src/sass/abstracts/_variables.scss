@@ -28,25 +28,31 @@ $w-bold: 700;
 // Colores
 
 // Color del body
-$body-bg:hsl(240, 11%, 96%);
+$body-bg:rgb(244, 244, 246);
 
-// Body de la info del Slide
+//Footer
+$footer-bg:rgb(32, 32, 31);
+
+// fondo de los elementos p del slide principal
 $p-slide: rgba(0, 0, 0, 0.240);
 
 // Color tipografías
 $white-clr: rgb(255, 255, 255);
 
 $gray-clr: rgb(110, 110, 115);
-// $gray-claro:rgba(232, 233, 236, 0.847);
-$gray-claro:#e9eaeed8;
 
+$gray-claro:rgb(251, 251, 253);
+
+// para los "p" de las cards (los de color salmon)
 $salmon: salmon;
 
+// para los h4 de las cards;
 $black: black;
 
 // Box Shadow
-$shadow: 0px 0px 20px rgba(172, 172, 172, 0.3);
-$shadow-hover: 0px 0px 20px rgba(113, 113, 113, 0.3);
+$shadow: 0px 0px 8px rgba(220, 219, 219, 0.3);
+
+$shadow-hover: 0px 0px 9px rgba(191, 191, 191, 0.3);
 
 // Success
 $success-clr: rgb(9, 195, 114);
@@ -55,9 +61,12 @@ $success-clr: rgb(9, 195, 114);
 $error-clr: rgb(255, 56, 96);
 
 // Color boton azul
-$blue: rgb(0, 113, 227);
+$blue: hsl(210, 100%, 45%);
 
 // Hover Claro
 $h-claro:hsl(210, 86%, 56%);
+
+// azul labels de los inputs
+$label:hsl(210, 67%, 51%);
 
 // ----------------------------------------------------------------------------------

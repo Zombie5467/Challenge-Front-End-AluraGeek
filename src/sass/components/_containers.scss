@@ -1,0 +1,26 @@
+// Container del Header
+.container__header {
+  @include flex($j-content:space-around, $a-items:null, $wrap:wrap, $gap:null);
+
+  @include container__blanco($width:$xl, $padding:1.875em);
+}
+
+// --------------------------------------------------------------------------------------------
+
+// Contenedor sección Productos
+.container__productos {
+  @include container__transparente();
+}
+
+// --------------------------------------------------------------------------------------------
+
+// Contenedor sección Contacto
+.container__contacto {
+  @include container__blanco();
+  
+  @include flex($j-content:space-evenly, $a-items:center, $wrap:null, $gap:null);
+
+  @media (max-width: 820px) {
+      flex-direction: column;
+  }
+}

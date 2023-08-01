@@ -9,20 +9,15 @@
 @import"base/typography";
 
 //components
+@import"components/card";
+@import"components/containers";
 @import"components/form";
+@import"components/slider";
 
 //layout
-// @import"layout/experiencias";
-@import"layout/footer";
-// @import"layout/formacion";
-// @import"layout/navbar";
-// @import"layout/presentacion";
-// @import"layout/skills";
-// @import"layout/sobreMi";
-@import"layout/card";
 @import"layout/contacto";
+@import"layout/footer";
 @import"layout/header";
-@import"layout/slider";
 
 //themes
 @import"themes/light";

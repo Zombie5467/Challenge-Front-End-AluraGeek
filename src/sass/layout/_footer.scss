@@ -1,12 +1,4 @@
 .rodapie {
-    // @extend %border;
-    background-color: rgb(32, 32, 31);;
-    color: $gray-clr;
-
-    padding: 60px;
-
-    text-align: center;
+  @include footer();
 }
-p {
-    margin: 8px;
-}
+

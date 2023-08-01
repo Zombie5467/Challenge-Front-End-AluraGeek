@@ -6,48 +6,26 @@
     align-items: $a-items;
     flex-wrap: $wrap;
     gap: $gap;
+
+    /*
+      NOTA PERSONAL
+      $j-content = justify-content
+      $a-items = align-items
+    */  
     
 }
 
-/*
-    NOTA PERSONAL
-    $j-content = justify-content
-    $a-items = align-items
-*/
-
 // ----------------------------------------------------------------------------------
 
-// Mixin Container
-@mixin contain() {
-
-    background: #8E2DE2;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-    height: 60vh;
-    padding: 4.375em;   
-    font-size: 1.5625rem;
-
-    @media (max-width: 1800px) {
-        height: auto;
-        padding: 1.25em;
-    }
-}
-
-// ----------------------------------------------------------------------------------
-
-// Mixin span (degradado del nombre Alura Geek)
+// Elemento "span" del Logo (degradado del nombre Alura Geek)
 @mixin span() {
+
   background: linear-gradient(to left, #00bcd4 0%, #651FFF 100%);
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	-moz-text-fill-color: transparent;
+
 }
 
 // ----------------------------------------------------------------------------------
@@ -75,6 +53,7 @@
   &:active {
     opacity: .9;
   }
+
 }
 
 // ----------------------------------------------------------------------------------
@@ -104,3 +83,166 @@
     opacity: .9;
   }
 }
+
+// ----------------------------------------------------------------------------------
+
+// Container de la barra de Búsqueda
+@mixin container__search {
+
+  width: 28em;
+	height: 2.2em;
+
+	border-radius: 1.25em;
+
+  margin-left: 1.25em;
+
+  background-color: $body-bg;
+
+  transition: all 0.3s ease-in-out;
+
+	& a {
+		background: transparent;
+		border: 0;
+	}
+  
+}
+
+// ----------------------------------------------------------------------------------
+
+// Barra de Búsqueda
+@mixin search {
+
+  width: 30em;
+	height: 2.2em;
+  
+ 	font-weight: $w-bold;
+  color: $gray-clr;
+	
+  background: transparent;
+
+	margin: 0 10 0 0;
+	padding: .25em .9em;
+
+	border-radius: 20px;
+	border-style: none;
+	outline: none;
+  
+  
+}
+
+// ----------------------------------------------------------------------------------
+
+// Container con color de fondo Blanco
+@mixin container__blanco($width:$xl, $padding:55px 15px) {
+
+  width: $width;
+  
+  background-color: $white-clr;
+  
+  padding: $padding;
+  
+}
+
+// Container con color de fondo transparente
+@mixin container__transparente() {
+
+  padding: 2em;
+  margin: 55px 15px;
+
+    .h2--margin {
+      margin-bottom: 25px;
+      
+      .span--gray {
+        color: $gray-clr;
+      }
+    }
+}
+
+// ----------------------------------------------------------------------------------
+
+// Estilos de las cards
+@mixin card {
+
+  max-width: 320px;
+  height: 50vh;
+
+  padding: 0.9375em;
+  margin: 10px;
+
+  background-color: $white-clr;
+
+  border-radius: 12px;
+
+  transition: all ease 250ms;
+  cursor: pointer;
+  
+  box-shadow: $shadow;
+
+  &:hover {
+    box-shadow: $shadow-hover;
+    transform: scale(1.01);
+  }
+
+  .a__card {
+    color: $black;
+  }
+
+  .p--gray {
+    color: $gray-clr;
+    margin: 0;
+  }
+
+  & img {
+    width: 100%;
+    height: 320px;
+    object-fit: contain;  
+  }
+
+  .p--salmon {
+    color: $salmon;
+    font-size: .875rem;
+
+    margin: 0 0 0.625em 0;
+  }
+
+  // Responsive 
+  @media (max-width: 290px) {
+    .card {
+      width: 200px;  
+    }
+  }
+
+}
+
+// Estilos de los elementos "a" de la sección contacto
+@mixin a__gray {
+  display: inline-block;
+    
+  margin-bottom: 30px;
+  color: $gray-clr;
+
+  &:hover {
+    border-bottom: 1px solid $gray-clr;
+  }
+}
+
+// ----------------------------------------------------------------------------------
+
+// Footer
+@mixin footer {
+
+   // @extend %border;
+  color: $gray-clr;
+  
+  background-color: $footer-bg;
+
+  padding: 60px;
+
+  text-align: center;
+
+  .p__footer {
+    margin: 8px;
+  }
+
+}
+

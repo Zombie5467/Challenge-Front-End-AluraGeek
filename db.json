@@ -1,0 +1,25 @@
+{
+  "producto": [
+    {
+      "imgUrl": "https://m.media-amazon.com/images/I/81YFWm335eL._AC_SL1500_.jpg",
+      "recomendado": "Free Shiping",
+      "nombre": "Funda Nintendo Premium",
+      "precio": "210.03",
+      "id": "7bdc6d9c-73b8-4b38-989c-ac66987e60a4"
+    },
+    {
+      "imgUrl": "https://m.media-amazon.com/images/I/71Q6y6rDsLL._AC_SL1500_.jpg",
+      "recomendado": "30% Off",
+      "nombre": "Protector OLET",
+      "precio": "22.25",
+      "id": "75a2a1ec-6585-4004-8134-1be5efa06d39"
+    },
+    {
+      "imgUrl": "https://m.media-amazon.com/images/I/618NC8I3pqL._AC_SL1500_.jpg",
+      "recomendado": "Free Shipping",
+      "nombre": "Protector Premium",
+      "precio": "25.36",
+      "id": "cc6faa7d-c4f6-43ef-82d9-2acaca6c10c6"
+    }
+  ]
+}

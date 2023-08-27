@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/de5f578256.js" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/Logo.png" />  
+
+    <!-- Hoja de estilos Este Documento -->
+    <link rel="stylesheet" href="sass/main.scss" />
+
+    <title>Editar</title>
+</head>
+
+<body>
+    <section class="container__productos">
+        <h2 class="h2--margin">CRUD. <span class="span--gray">Area del administrador para la edición de los items</span></h2>
+        
+    <a href="completo.html">Completo</a>
+    <a href="productos.html">Productos</a>
+    <a href="error.html">Error</a>
+
+    <form action="" data-producto>
+        <label for="imgUrl"></label>
+        <input type="" placeholder="introduce el url de la imagen" data-img>
+
+        <label for="recomendado"></label>
+        <input type="text" placeholder="texto Feature" required data-recomendado>
+
+        <label for="name"></label>
+        <input type="text" placeholder="Nombre del Producto" required data-nombre>
+
+        <label for="precio"></label>
+        <input type="text" placeholder="introduce el precio del producto" data-precio>
+
+        <button type="submit">crear</button>
+      </form>
+    </section>
+
+<script type="module" src="controllers/actualizar-controller.js"></script>
+</body>
+</html>

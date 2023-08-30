@@ -1,3 +1,4 @@
+// Slider de Productos, Primera Fila
 $(document).ready(function () {
   $('#autoWidth').lightSlider({
     autoWidth: true,
@@ -7,3 +8,28 @@ $(document).ready(function () {
     },
   });
 });
+
+
+// Slider de Productos, Segunda Fila
+$(document).ready(function () {
+  $('#widthAuto').lightSlider({
+    autoWidth: true,
+    loop: false,
+    onSliderLoad: function () {
+      $('#widthAuto').removeClass('cS-hidden');
+    },
+  });
+});
+
+
+// Slider de Productos, Tercera Fila
+$(document).ready(function () {
+  $('#widthAutoTercero').lightSlider({
+    autoWidth: true,
+    loop: false,
+    onSliderLoad: function () {
+      $('#widthAutoTercero').removeClass('cS-hidden');
+    },
+  });
+});
+

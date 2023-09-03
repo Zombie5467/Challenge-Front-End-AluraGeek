@@ -17,11 +17,12 @@ const crearNuevaLinea = (imgUrl, recomendado, nombre, precio, id) => {
 
               <p class="p--gray">${precio}</p>
               
+              <div class="button--flex">
+                <a href="crudEdit.html?id=${id}"><button class="boton">Edit</button></a>
+              
+                </div>
+                <button class="button--red" " id='${id}'>Delete</button>
 
-              <button type="button" id='${id}'>delete</button>
-              
-              <a href="crudEdit.html?id=${id}"><button>edit</button></a>
-              
             </div>
           </div>
   `;

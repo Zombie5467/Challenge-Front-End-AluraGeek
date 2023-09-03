@@ -9,7 +9,7 @@ productoFormulario.addEventListener('submit', (evento) => {
     document.querySelector('[data-recomendado]').value;
   const nombreProducto = document.querySelector('[data-nombre]').value;
   const precioProducto = document.querySelector('[data-precio]').value;
-  console.log(imgProducto, recomendadoProducto, nombreProducto, precioProducto);
+  // console.log(imgProducto, recomendadoProducto, nombreProducto, precioProducto);
   productoServices
     .crearProducto(
       imgProducto,

@@ -1,0 +1,11 @@
+.productos__crud {
+  @include flex($j-content:null, $a-items:null, $gap:null);
+}
+
+.button--flex {
+  @include flex($j-content:space-between, $a-items:null, $gap:null);
+}
+
+.button--red {
+  @include btn__red();
+}

@@ -56,6 +56,31 @@
 
 }
 
+@mixin btn__red {
+
+  font-weight: $w-bold;
+  color: $white-clr;
+
+  background-color: $error-clr;
+
+  border-radius: 50px;
+  border: 0;
+  
+  padding: .9em;
+  
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $hrc-claro;
+  }
+
+  &:active {
+    opacity: .9;
+  }
+
+}
+
 // ----------------------------------------------------------------------------------
 
 // Boton Transparente

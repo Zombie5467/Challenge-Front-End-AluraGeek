@@ -9,7 +9,7 @@ productoFormulario.addEventListener('submit', (evento) => {
     document.querySelector('[data-recomendado]').value;
   const nombreProducto = document.querySelector('[data-nombre]').value;
   const precioProducto = document.querySelector('[data-precio]').value;
-  // console.log(imgProducto, recomendadoProducto, nombreProducto, precioProducto);
+  
   productoServices
     .crearProducto(
       imgProducto,
@@ -18,11 +18,14 @@ productoFormulario.addEventListener('submit', (evento) => {
       precioProducto
     )
     .then(respuesta => {
-      // window.location.href = '/src/productos.html'
-      // function refrescar() {
-      //   location.reload();
-      // }
-      // refrescar();
       productoServices.refrescarPagina();
+      /** 
+      Backup Refrescar pagina viejo
+      window.location.href = '/src/productos.html'
+        function refrescar() {
+          location.reload();
+        }
+      refrescar();
+    */
     });
 });

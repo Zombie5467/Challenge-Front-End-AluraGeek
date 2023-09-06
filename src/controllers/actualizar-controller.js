@@ -7,7 +7,7 @@ const obtenerInformacion = () => {
     const id = url.searchParams.get('id');
 
     if (id === null) {
-        // window.location.href = '/src/error.html';
+        window.location.href = '/src/error.html';
     }
 
     const imgUrl = document.querySelector('[data-img]');
@@ -37,7 +37,7 @@ formulario.addEventListener('submit', (evento) => {
     const recomendado = document.querySelector('[data-recomendado]').value
     const nombre = document.querySelector('[data-nombre]').value
     const precio = document.querySelector('[data-precio]').value
-    // console.log(imgUrl, ' ', recomendado, ' ', nombre, ' ', precio);
+    
     productoServices.actualizarProducto(imgUrl, recomendado, nombre, precio, id).then(() => {
     //   productoServices.refrescarPagina(); 
       window.location.href = 'http://localhost:1234/productos.html';

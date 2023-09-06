@@ -44,7 +44,7 @@ const crearProducto = (imgUrl, recomendado, nombre, precio) => {
 };
 
 const eliminarProducto = (id) => {
-  console.log('Eliminar el id: ', id);
+ 
   return fetch(`http://localhost:3000/producto/${id}`, {
     method: 'DELETE',
   })
@@ -101,58 +101,3 @@ export const productoServices = {
   refrescarPagina,
 
 };
-
-// listaProductos().then((data) => {
-//   data.forEach((perfilProducto) => {
-//     const nuevaLinea = crearNuevaLinea(
-//       perfilProducto.imgUrl,
-//       perfilProducto.recomendado,
-//       perfilProducto.nombre,
-//       perfilProducto.precio
-//     );
-//     dbProducto.appendChild(nuevaLinea);
-//   });
-// }).catch((error) => alert('Ocurrió un error'));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//  const promise = new Promise((resolve, reject) => {
-//    const http = new XMLHttpRequest();
-
-//    http.open('GET', 'http://localhost:3000/producto');
-
-//    http.send();
-
-//    http.onload = () => {
-//      const response = JSON.parse(http.response);
-//      // console.log(data);
-//      if (http.status >= 400) {
-//        reject(response);
-//      } else {
-//        resolve(response);
-//      }
-//    };
-//  });
-//  return promise; 

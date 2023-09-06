@@ -23,24 +23,17 @@
     },
     {
       "imgUrl": "https://m.media-amazon.com/images/I/41GYmjbeVSL._AC_SL1000_.jpg",
-      "recomendado": "Free Shipping",
+      "recomendado": "Envio Gratis",
       "nombre": "Fire TV Stick",
       "precio": "28.32",
       "id": "68c6b14b-f778-4670-85de-a1dc46cda4a0"
     },
     {
       "imgUrl": "https://m.media-amazon.com/images/I/612bjwBuobS._SL1500_.jpg",
-      "recomendado": "New",
+      "recomendado": "20% Off",
       "nombre": "PS5 DualSense",
-      "precio": "85.69",
+      "precio": "85.56",
       "id": "1ecc32a7-0adb-4e6e-982c-62e189cb4590"
-    },
-    {
-      "imgUrl": "https://m.media-amazon.com/images/I/61ypl-HO+WS._SL1500_.jpg",
-      "recomendado": "Top Sales",
-      "nombre": "Playstation DualSense Controller",
-      "precio": "85.43",
-      "id": "47486b66-375e-489c-9889-6c3d83fe168f"
     }
   ]
 }

@@ -40,6 +40,7 @@ formulario.addEventListener('submit', (evento) => {
     
     productoServices.actualizarProducto(imgUrl, recomendado, nombre, precio, id).then(() => {
     //   productoServices.refrescarPagina(); 
+     
       window.location.href = 'http://localhost:1234/productos.html';
     });
 });

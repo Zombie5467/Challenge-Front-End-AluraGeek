@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"91kC6":[function(require,module,exports) {
+})({"1OrsG":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "10d54bb5e17c38e4";
+module.bundle.HMR_BUNDLE_ID = "bfbc5cc6c32d23bc";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -573,49 +573,39 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     });
 }
 
-},{}],"eAQDa":[function(require,module,exports) {
+},{}],"94yRD":[function(require,module,exports) {
 var _productosServiciosJs = require("../servicios/productos-servicios.js");
-const crearNuevaLinea = (imgUrl, recomendado, nombre, precio, id)=>{
-    console.log(id);
-    const linea = document.createElement("div");
-    // linea.classList.add('item-a');
-    const contenido = `
-          <div  href="#">
-            <div class="card">
-
-              <img src=${imgUrl} alt="">
-
-              <div class="card__info">
-                <p class="p--salmon">${recomendado}</p>
-                <h4 class="a__card">${nombre}</h4>
-              </div>
-
-              <p class="p--gray">${precio}</p>
-              
-              <div class="button--flex">
-                <button type="button" id='${id}' class="button--red">delete</button>
-                <a href="crudEdit.html?id=${id}"><button class="boton">Edit</button></a>
-              </div>
-
-            </div>
-          </div>
-  `;
-    linea.innerHTML = contenido;
-    const btnDelete = linea.querySelector("button");
-    btnDelete.addEventListener("click", ()=>{
-        const id = btnDelete.id;
-        (0, _productosServiciosJs.productoServices).eliminarProducto(id).then((respuesta)=>{}).catch((err)=>alert("Ocurri\xf3 un error"));
+const formulario = document.querySelector("[data-producto]");
+const obtenerInformacion = ()=>{
+    const url = new URL(window.location);
+    const id = url.searchParams.get("id");
+    if (id === null) window.location.href = "/src/error.html";
+    const imgUrl = document.querySelector("[data-img]");
+    const recomendado = document.querySelector("[data-recomendado]");
+    const nombre = document.querySelector("[data-nombre]");
+    const precio = document.querySelector("[data-precio]");
+    (0, _productosServiciosJs.productoServices).detalleProducto(id).then((producto)=>{
+        imgUrl.value = producto.imgUrl;
+        recomendado.value = producto.recomendado;
+        nombre.value = producto.nombre;
+        precio.value = producto.precio;
     });
-    return linea;
 };
-const dbProducto = document.querySelector("[data-producto]");
-(0, _productosServiciosJs.productoServices).listaProductos().then((data)=>{
-    data.forEach(({ imgUrl, recomendado, nombre, precio, id })=>{
-        const nuevaLinea = crearNuevaLinea(imgUrl, recomendado, nombre, precio, id);
-        dbProducto.appendChild(nuevaLinea);
+obtenerInformacion();
+formulario.addEventListener("submit", (evento)=>{
+    evento.preventDefault();
+    const url = new URL(window.location);
+    const id = url.searchParams.get("id");
+    const imgUrl = document.querySelector("[data-img]").value;
+    const recomendado = document.querySelector("[data-recomendado]").value;
+    const nombre = document.querySelector("[data-nombre]").value;
+    const precio = document.querySelector("[data-precio]").value;
+    (0, _productosServiciosJs.productoServices).actualizarProducto(imgUrl, recomendado, nombre, precio, id).then(()=>{
+        //   productoServices.refrescarPagina(); 
+        window.location.href = "http://localhost:1234/productos.html";
     });
-}).catch((error)=>alert("Ocurri\xf3 un error"));
+});
 
-},{"../servicios/productos-servicios.js":"WV6K7"}]},["91kC6","eAQDa"], "eAQDa", "parcelRequire94c2")
+},{"../servicios/productos-servicios.js":"WV6K7"}]},["1OrsG","94yRD"], "94yRD", "parcelRequire94c2")
 
-//# sourceMappingURL=productos.e17c38e4.js.map
+//# sourceMappingURL=crudEdit.c32d23bc.js.map

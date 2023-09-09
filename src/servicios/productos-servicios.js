@@ -79,13 +79,14 @@ const editarProducto = (id) => {
 };
 
 const actualizarProducto = (imgUrl, recomendado, nombre, precio, id) => {
-  return fetch(`http://localhost:3000/producto/${id}`, {
+  return fetch(`https://alurageek-moil.onrender.com/productos.html${id}`, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ imgUrl, recomendado, nombre, precio, id}),
-  }).then((respuesta) => console.log(respuesta))
+    body: JSON.stringify({ imgUrl, recomendado, nombre, precio, id }),
+  })
+    .then((respuesta) => console.log(respuesta))
     .catch((error) => {
       console.error('Error en la solicitud PUT:', error);
     });

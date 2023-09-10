@@ -28,13 +28,13 @@
 
 // Fetch API 
 const listaProductos = () => {
-  return fetch('http://localhost:3000/producto').then( respuesta => {
+  return fetch('https://alurageek-moil.onrender.com/producto').then( respuesta => {
     return respuesta.json()  
   });
 };
 
 const crearProducto = (imgUrl, recomendado, nombre, precio) => {
-  return fetch('http://localhost:3000/producto', {
+  return fetch('https://alurageek-moil.onrender.com/producto', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ const crearProducto = (imgUrl, recomendado, nombre, precio) => {
 
 const eliminarProducto = (id) => {
  
-  return fetch(`http://localhost:3000/producto/${id}`, {
+  return fetch(`https://alurageek-moil.onrender.com/producto/${id}`, {
     method: 'DELETE',
   })
     .then((response) => {
@@ -68,18 +68,18 @@ function refrescarPagina() {
 
 
 const detalleProducto = (id) => {
-  return fetch(`http://localhost:3000/producto/${id}`).then((respuesta) =>
+  return fetch(`https://alurageek-moil.onrender.com/producto/${id}`).then((respuesta) =>
     respuesta.json()
   );
 };
 
 const editarProducto = (id) => {
-  return fetch(`http://localhost:3000/producto/${id}`).then((respuesta) => respuesta.json()
+  return fetch(`https://alurageek-moil.onrender.com/producto/${id}`).then((respuesta) => respuesta.json()
   );
 };
 
 const actualizarProducto = (imgUrl, recomendado, nombre, precio, id) => {
-  return fetch(`http://localhost:3000/producto/${id}`, {
+  return fetch(`https://alurageek-moil.onrender.com/producto/${id}`, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json',

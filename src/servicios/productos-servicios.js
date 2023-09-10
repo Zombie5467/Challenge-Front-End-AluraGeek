@@ -28,13 +28,13 @@
 
 // Fetch API 
 const listaProductos = () => {
-  return fetch('http://localhost:10000/producto').then( respuesta => {
+  return fetch('http://localhost:3000/producto').then( respuesta => {
     return respuesta.json()  
   });
 };
 
 const crearProducto = (imgUrl, recomendado, nombre, precio) => {
-  return fetch('http://localhost:10000/producto', {
+  return fetch('http://localhost:3000/producto', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ const crearProducto = (imgUrl, recomendado, nombre, precio) => {
 
 const eliminarProducto = (id) => {
  
-  return fetch(`http://localhost:10000/producto/${id}`, {
+  return fetch(`http://localhost:3000/producto/${id}`, {
     method: 'DELETE',
   })
     .then((response) => {
@@ -68,18 +68,18 @@ function refrescarPagina() {
 
 
 const detalleProducto = (id) => {
-  return fetch(`http://localhost:10000/producto/${id}`).then((respuesta) =>
+  return fetch(`http://localhost:3000/producto/${id}`).then((respuesta) =>
     respuesta.json()
   );
 };
 
 const editarProducto = (id) => {
-  return fetch(`http://localhost:10000/producto/${id}`).then((respuesta) => respuesta.json()
+  return fetch(`http://localhost:3000/producto/${id}`).then((respuesta) => respuesta.json()
   );
 };
 
 const actualizarProducto = (imgUrl, recomendado, nombre, precio, id) => {
-  return fetch(`http://localhost:10000/producto/${id}`, {
+  return fetch(`http://localhost:3000/producto/${id}`, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json',

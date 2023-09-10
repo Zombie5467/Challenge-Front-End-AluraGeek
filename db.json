@@ -32,7 +32,11 @@
       "imgUrl": "https://m.media-amazon.com/images/I/612bjwBuobS._SL1500_.jpg",
       "recomendado": "20% Off",
       "nombre": "PS5 DualSense",
+<<<<<<< HEAD
       "precio": "85.17",
+=======
+      "precio": "85.26",
+>>>>>>> 4213c577a2cd8ac0bfc1be98f832216880dc9aa0
       "id": "1ecc32a7-0adb-4e6e-982c-62e189cb4590"
     }
   ]

@@ -41,6 +41,6 @@ formulario.addEventListener('submit', (evento) => {
     productoServices.actualizarProducto(imgUrl, recomendado, nombre, precio, id).then(() => {
     //   productoServices.refrescarPagina(); 
      
-      window.location.href = 'https://alurageek-moil.onrender.com/productos.html';
+      window.location.href = 'http://localhost:10000/productos.html';
     });
 });

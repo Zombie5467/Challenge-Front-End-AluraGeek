@@ -57,11 +57,6 @@ productoServices
   })
   .catch((error) => alert('Ocurrió un error'));
 
-  
-
-{/* <a href="html?id=${id}">
-  <button class="boton">edit</button>
-</a>; */}
 
 
   

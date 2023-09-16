@@ -41,6 +41,7 @@ formulario.addEventListener('submit', (evento) => {
     productoServices.actualizarProducto(imgUrl, recomendado, nombre, precio, id).then(() => {
     //   productoServices.refrescarPagina(); 
      
-      window.location.href = 'http://localhost:1234/productos.html';
+      window.location.href =
+        'https://alurageek-json-server-crud.onrender.com/producto/productos.html';
     });
 });

@@ -19,7 +19,7 @@ const crearNuevaLinea = (imgUrl, recomendado, nombre, precio, id) => {
               
               <div class="button--flex">
                 <button type="button" id='${id}' class="button--red">delete</button>
-                <a href="https://alurageek-re4c.onrender.com/productos.html?id=${id}"><button class="boton">Edit</button></a>
+                <a href="https://alurageek-re4c.onrender.com/crudEdit.html?id=${id}"><button class="boton">Edit</button></a>
               </div>
 
             </div>

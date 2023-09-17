@@ -42,6 +42,7 @@ formulario.addEventListener('submit', (evento) => {
     //   productoServices.refrescarPagina(); 
      
       window.location.href =
-        'https://alurageek-re4c.onrender.com/productos.html';
+            'https://alurageek-re4c.onrender.com/productos.html';
+        
     });
 });
